@@ -27,4 +27,9 @@ export const saveIcon = "file-signature";
 export const editIcon = "pencil-alt";
 export const appIcon = "monument";
 export const viewIcon = "eye";
-export const deleteIcon = "trash-alt";
+export const deleteIcon = ["far", "trash-alt"];
+
+
+export const appTitleFontSize = 72;
+export const headerFontSize = 32;
+export const subheaderFontSize = 24;

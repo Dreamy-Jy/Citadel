@@ -3,6 +3,8 @@
  */
 
 import App from './App';
+import HomeScreen from "./src/screens/HomeScreen";
+import CreateScreen from "./src/screens/CreateScreen";
 import { Navigation } from "react-native-navigation";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -19,9 +21,9 @@ import {
     faTrashAlt
 } from "@fortawesome/free-regular-svg-icons";
 
-library.add(faPlus, faChevronLeft, faRedoAlt, faFileSignature, faPencilAlt, faMonument, faEye, faTrashAlt);
+library.add([faPlus, faChevronLeft, faRedoAlt, faFileSignature, faPencilAlt, faMonument, faEye, faTrashAlt]);
 
-Navigation.registerComponent(`navigation.playground.WelcomeScreen`, () => App);
+Navigation.registerComponent(`navigation.playground.WelcomeScreen`, () => CreateScreen);
 
 Navigation.events().registerAppLaunchedListener(() => {
     Navigation.setRoot({

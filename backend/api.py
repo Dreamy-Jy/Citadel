@@ -30,6 +30,7 @@ def generate_password():
 	alphabet = string.ascii_letters + string.digits
 	password = ''.join(secrets.choice(alphabet) for i in range(length))
 	return password
+
 if __name__ == '__main__':
   app.run(debug=True, host='0.0.0.0', port=8080)
     #app.run(debug=True)

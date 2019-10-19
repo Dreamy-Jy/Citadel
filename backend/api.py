@@ -23,7 +23,7 @@ def shutdown_session(exception=None):
 def returnhi(exception=None):
 	if 'name' in request.args:
 		return "Hello World, "
- 
+#length is currently a place holder value to be implemented into the uri as an optional arg
 @app.route('/generate_password', methods=['GET'])
 def generate_password():
 	length = 10

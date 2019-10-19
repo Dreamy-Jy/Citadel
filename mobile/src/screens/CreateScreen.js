@@ -22,8 +22,10 @@ export default class CreateScreen extends Component {
                     </View>
                     <Text style={[styles.subHeader]}>Make a Password</Text>
                     <TextInput style={[styles.input]} placeholder={"Enter Some Value"} placeholderTextColor={placeholderFontColor}/>
-                    <Action icon={deleteIcon} text="Hello World" size={20} action={()=>{}}/>
-                    <Action icon={deleteIcon} size={20} action={()=>{}}/>
+                    <View style={{alignItems: "center", justifyContent: "center"}}>
+                        <Action icon={deleteIcon} text="Hello World" size={20} action={()=>{}}/>
+                        <Action icon={deleteIcon} size={24} action={()=>{}}/>
+                    </View>
                 </View>
             </SafeAreaView>
         );

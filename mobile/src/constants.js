@@ -26,7 +26,7 @@ export const remakeIcon = "redo-alt";
 export const saveIcon = "file-signature";
 export const editIcon = "pencil-alt";
 export const appIcon = "monument";
-export const viewIcon = "eye";
+export const viewIcon = ["far", "eye"];
 export const deleteIcon = ["far", "trash-alt"];
 
 

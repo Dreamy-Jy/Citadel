@@ -57,3 +57,12 @@ buck-out/
 
 # CocoaPods
 mobile/ios/Pods/
+
+#Files to ignore from the backend
+*.json
+tests.py
+app_gcp.py
+setup.py
+alembic.*
+database/database.db
+database/data

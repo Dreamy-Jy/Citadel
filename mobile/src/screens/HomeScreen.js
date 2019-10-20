@@ -13,7 +13,8 @@ import {
     mainFontColor_Light, 
     backgroundColor_Light, 
     addIcon,
-    viewIcon
+    viewIcon,
+    actionSize
 } from "../constants";
 import Action from "../components/Action";
 
@@ -34,7 +35,7 @@ export default class HomeScreen extends Component {
                     <Action 
                         icon={viewIcon} 
                         text="View Credentials" 
-                        size={16} 
+                        size={actionSize} 
                         action={()=>{}}/>
                 </View>
             </SafeAreaView>

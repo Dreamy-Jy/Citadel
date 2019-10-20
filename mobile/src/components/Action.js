@@ -48,14 +48,14 @@ export default class Action extends Component {
         });
         return (
             <TouchableWithoutFeedback onPressIn={this.pressedIn} onPressOut={this.pressedOut}>
-                <Animated.View style={[styles.container, {backgroundColor: backgroundColorSpectrum}]}>
+                <Animated.View style={[styles.container, {backgroundColor: backgroundColorSpectrum}, this.props.containerStyles]}>
                     <FontAwesomeIcon 
                         icon={this.props.icon}
                         size={this.props.size}
                         color={actionColor_Light}/>
 
                     {this.props.text == null? null : (
-                        <Text style={[styles.text, {fontSize: this.props.size}]}>
+                        <Text style={[styles.text, {fontSize: this.props.size}, this.props.textStyles]}>
                             {this.props.text}
                         </Text>
                     )}
@@ -70,6 +70,7 @@ const styles = new StyleSheet.create({
     container: {
         flexDirection: "row",
         alignItems: "center",
+        alignSelf: "flex-start",
         paddingHorizontal: 8,
         paddingVertical: 8
     },

@@ -23,7 +23,7 @@ import {
 
 library.add([faPlus, faChevronLeft, faRedoAlt, faFileSignature, faPencilAlt, faMonument, faEye, faTrashAlt]);
 
-Navigation.registerComponent(`navigation.playground.WelcomeScreen`, () => HomeScreen);
+Navigation.registerComponent(`navigation.playground.WelcomeScreen`, () => CreateScreen);
 
 Navigation.events().registerAppLaunchedListener(() => {
     Navigation.setRoot({

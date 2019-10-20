@@ -28,13 +28,28 @@ Navigation.registerComponent(`CreateCreds`, () => CreateScreen);
 Navigation.registerComponent(`Home`, () => HomeScreen);
 Navigation.registerComponent(`ViewCreds`, () => ViewScreen);
 
+// Navigation.setDefaultOptions({
+//     topBar
+// });
 
 Navigation.events().registerAppLaunchedListener(() => {
     Navigation.setRoot({
         root: {
-            component: {
-                name: "ViewCreds"
-            }
+            stack: {
+                children: [{
+                        component: {
+                            name: "Home"
+                        }
+                }],
+                options: {
+                    topBar: {
+                        visible: false,
+                        background: {
+                            translucent: false
+                        }
+                    }
+                }
+            },
         }
     });
 });

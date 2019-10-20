@@ -1,16 +1,16 @@
 import React, {Component} from 'react'
-import {View, Text, StyleSheet, TouchableWithoutFeedback, Animated} from 'react-native';
+import { 
+    Text, 
+    StyleSheet, 
+    TouchableWithoutFeedback, 
+    Animated
+} from 'react-native';
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
 import {
-    backgroundColor_Light,
-    mainFontColor_Dark,
-    actionColor_Dark,
-    highlightColor_Dark,
     actionColor_Light,
     actionFontFamily,
     highlightColor_Light,
-    mainFontColor_Light
-} from '../constants'
+} from '../constants';
 
 //export class name for button component
 export default class Action extends Component {

@@ -17,11 +17,12 @@ import {
     actionSize
 } from "../constants";
 import Action from "../components/Action";
+import { Navigation } from "react-native-navigation";
 
 export default class HomeScreen extends Component {
     render() {
         return(
-            <SafeAreaView style={[styles.screen]}>
+            <View style={[styles.screen]}>
                 <View style={[styles.titleContainer]}>
                     <FontAwesomeIcon icon={appIcon} color={mainFontColor_Light} size={72}/>
                     <Text style={[styles.titleText]}>Citadel</Text>
@@ -30,15 +31,15 @@ export default class HomeScreen extends Component {
                     <Action 
                         icon={addIcon}
                         text="Add Credentials"
-                        size={16} 
-                        action={()=>{}}/>
+                        size={actionSize-8} 
+                        action={()=>{ Navigation.push(this.props.componentId, {component:{name:"CreateCreds"}}) }}/>
                     <Action 
                         icon={viewIcon} 
                         text="View Credentials" 
-                        size={actionSize} 
-                        action={()=>{}}/>
+                        size={actionSize-8} 
+                        action={() => { Navigation.push(this.props.componentId, {component:{name:"ViewCreds"}}) }}/>
                 </View>
-            </SafeAreaView>
+            </View>
         );
     }
 }
@@ -48,7 +49,7 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: backgroundColor_Light,
         alignItems: "center",
-        justifyContent: "center"
+        justifyContent: "center",
     },
     titleContainer: {
         flexDirection: "row",

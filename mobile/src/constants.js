@@ -34,5 +34,6 @@ export const deleteIcon = ["far", "trash-alt"];
 export const appTitleFontSize = 72;
 export const headerFontSize = 32;
 export const subheaderFontSize = 24;
-export const actionSize = 16;
+export const actionSize = 24;
 export const slimTextFontSize = 16;
+export const regularFontSize = 16;

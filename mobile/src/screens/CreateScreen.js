@@ -3,12 +3,9 @@ import { SafeAreaView, View, Text, TextInput, StyleSheet} from "react-native";
 import { 
     backgroundColor_Light, 
     mainFontColor_Light, 
-    headerFontFamily, 
-    headerFontSize, 
     placeholderFontColor, 
     subheaderFontFamily, 
     subheaderFontSize,
-    deleteIcon,
     saveIcon,
     actionSize
 } from "../constants";
@@ -22,7 +19,6 @@ export default class CreateScreen extends Component {
                 
                 <View>
                     <Header text="Your Credentials" />
-
                     <Text style={[styles.subHeader]}>Make a Password</Text>
                     <TextInput style={[styles.input]} placeholder={"Enter Some Value"} placeholderTextColor={placeholderFontColor}/>
                 </View>

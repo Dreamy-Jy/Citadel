@@ -17,6 +17,7 @@ export const actionFontFamily = "OpenSans-Bold";
 export const headerFontFamily = "Merriweather-Black";
 export const subheaderFontFamily = "Merriweather-Bold";
 export const normalTextFontFamily = "Merriweather-Regular";
+export const slimTextFontFamily = "Merriweather-Light";
 export const inputTextFontFamily = "OpenSans";
 
 
@@ -34,3 +35,4 @@ export const appTitleFontSize = 72;
 export const headerFontSize = 32;
 export const subheaderFontSize = 24;
 export const actionSize = 16;
+export const slimTextFontSize = 16;
